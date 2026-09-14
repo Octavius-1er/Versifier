@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Poète Virtuel - Jeu de Versification</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimaille — Le jeu de la versification</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Le Poète Virtuel</h1>
-        <p>Transformez la phrase en prose ci-dessous en un court poème ou quelques vers. Laissez libre cours à votre imagination !</p>
-
-        <div class="card">
-            <h2>Phrase à versifier :</h2>
-            <div id="proseText" class="text-display">
-                <!-- La phrase en prose sera insérée ici par JavaScript -->
-            </div>
-            <button id="newPhraseBtn" class="button primary">Nouvelle phrase</button>
-        </div>
-
-        <div class="card input-card">
-            <h2>Votre œuvre poétique :</h2>
-            <textarea id="poetryInput" placeholder="Écrivez vos vers ici... (ex: Mon cœur léger comme une plume, s'envole vers l'azur.)" rows="6"></textarea>
-            <button id="submitPoemBtn" class="button secondary">Soumettre mon poème</button>
-        </div>
-
-        <div id="resultCard" class="card result-card hidden">
-            <h2>Votre création :</h2>
-            <div id="yourProse" class="text-display"></div>
-            <div id="yourPoem" class="text-display poem-output"></div>
-            <button id="resetGameBtn" class="button primary">Rejouer</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<div class="stage">
+  <div class="brand">Rim<span>ai</span>lle</div>
+  <div class="page center">
+    <h1>Le défi de la versification</h1>
+    <p>Choisis ton rôle pour cette partie :</p>
+    <p><a href="host.html"><button class="btn gold" style="width:100%; margin-bottom:12px;">Écran de classe (professeur)</button></a></p>
+    <p><a href="player.html"><button class="btn" style="width:100%;">Rejoindre en tant qu'élève</button></a></p>
+  </div>
+</div>
 </body>
 </html>
